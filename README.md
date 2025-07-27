@@ -1,73 +1,120 @@
-# Welcome to your Lovable project
+The `computer` tool is currently unavailable, so I can't directly process the uploaded image. However, you can still integrate your uploaded image into a professional `README.md` by referencing the file manually once hosted (e.g., in your GitHub repo or image CDN).
 
-## Project info
+Below is a professional `README.md` template that you can use. Just replace the image path with the correct hosted URL once the image is uploaded:
 
-**URL**: https://lovable.dev/projects/ea08fb4d-d030-4a52-b27e-d261b5b7c0f6
+---
 
-## How can I edit this code?
+````markdown
+# Stock Pattern Pilot – AI Trading Dashboard
 
-There are several ways of editing your application.
+![AI Trading Dashboard](./path/to/your/image.png)
 
-**Use Lovable**
+## 🚀 Overview
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ea08fb4d-d030-4a52-b27e-d261b5b7c0f6) and start prompting.
+**Stock Pattern Pilot** is a next-generation, AI-powered trading dashboard designed for modern financial analysis. Built using **React**, **TypeScript**, and **ShadCN UI**, it provides traders with real-time insights, AI-generated signals, and backtest analytics—all in a sleek, modular interface.
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## 🔍 Features
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- 📈 **AI Signal Cards** – Visual trading signals using backtested AI logic ([`AISignalCard.tsx`](src/components/trading/AISignalCard.tsx))
+- 📊 **Market Overview** – Realtime summaries of indices and sectors ([`MarketOverview.tsx`](src/components/trading/MarketOverview.tsx))
+- 🧪 **Backtest Results** – Strategy performance metrics with dynamic charts ([`BacktestResults.tsx`](src/components/trading/BacktestResults.tsx))
+- 🎯 **Screening Filters** – Multi-criteria filters for precision stock screening ([`ScreeningFilters.tsx`](src/components/trading/ScreeningFilters.tsx))
+- 🕒 **Real-Time Updates** – Live data refresh with interval polling ([`TradingDashboard.tsx`](src/components/trading/TradingDashboard.tsx))
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 🧰 Tech Stack
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+| Tool             | Purpose                             |
+|------------------|-------------------------------------|
+| Vite             | Frontend bundler                    |
+| React (TS)       | UI framework                        |
+| Tailwind + ShadCN| Component styling                   |
+| Zustand          | State management                    |
+| Lucide Icons     | Iconography                         |
+| Mock Service     | Placeholder data for development    |
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 🛠️ Installation
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
+git clone https://github.com/kdkiss/stock-pattern-pilot.git
+cd stock-pattern-pilot
+npm install
 npm run dev
+````
+
+> Requires Node.js v18+ and modern browsers.
+
+---
+
+## 🧪 Testing (Suggested)
+
+While no test suite is included yet, we recommend:
+
+* **Vitest** for unit tests
+* **Playwright** for end-to-end UI testing
+* **Jest** for state/store testing
+
+---
+
+## 📁 Project Structure
+
+```
+├── src
+│   ├── components/trading/   # Core UI components
+│   ├── pages/                # Route components
+│   ├── lib/                  # Utility functions
+│   └── hooks/                # Custom React hooks
+├── public/                   # Static assets
+├── index.html                # Entry point
+└── package.json              # Dependencies and scripts
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🔗 API & Data
 
-**Use GitHub Codespaces**
+Currently powered by mocked data. For production:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+* Connect to real stock APIs (e.g., Polygon.io, Alpha Vantage)
+* Integrate AI inference endpoints for live signals
+* Secure API keys using `.env` and proxy routing
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## 💡 Roadmap
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+* [ ] Connect live market data feed
+* [ ] AI model integration via RESTful endpoint
+* [ ] User authentication & watchlists
+* [ ] Chart interactivity (draw tools, zoom, export)
+* [ ] Strategy builder module
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/ea08fb4d-d030-4a52-b27e-d261b5b7c0f6) and click on Share -> Publish.
+## 🤝 Contributing
 
-## Can I connect a custom domain to my Lovable project?
+Pull requests welcome! Please lint (`eslint`) and format (`prettier`) before submitting.
 
-Yes, you can!
+---
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 📄 License
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+This project is open-source under the [MIT License](LICENSE).
+
+---
+
+## 🧠 Inspiration
+
+Built as a modern replacement for outdated dashboards—blending AI, simplicity, and trader-centric design.
+
+---
+
+```
+
+Let me know if you’d like this README adapted to a specific hosting service (e.g., GitHub Pages, Vercel) or want me to generate markdown with the image already hosted elsewhere.
+```
