@@ -1,10 +1,3 @@
-The `computer` tool is currently unavailable, so I can't directly process the uploaded image. However, you can still integrate your uploaded image into a professional `README.md` by referencing the file manually once hosted (e.g., in your GitHub repo or image CDN).
-
-Below is a professional `README.md` template that you can use. Just replace the image path with the correct hosted URL once the image is uploaded:
-
----
-
-````markdown
 # Stock Pattern Pilot – AI Trading Dashboard
 
 ![AI Trading Dashboard](./path/to/your/image.png)
@@ -113,8 +106,3 @@ This project is open-source under the [MIT License](LICENSE).
 Built as a modern replacement for outdated dashboards—blending AI, simplicity, and trader-centric design.
 
 ---
-
-```
-
-Let me know if you’d like this README adapted to a specific hosting service (e.g., GitHub Pages, Vercel) or want me to generate markdown with the image already hosted elsewhere.
-```
